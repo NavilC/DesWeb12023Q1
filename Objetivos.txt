@@ -10,3 +10,14 @@ Semana 1 Sesión 4
 
 1) Mas Sintaxis de Node JS
 2) Ejercicio Practico
+
+
+Tarea:
+1) Desarrollar un Servidor en Node Js que reciba de parametro el nombre de usuario, 
+el servicio debe responderle al cliente un mensaje de bienvenida con el nombre de usuario. 
+
+2) Desarrollar un Servidor en Node Js que reciba un numero, este debe responder 
+con el doble del numero y el triple del mismo. 
+
+3) Desarrollr un Servidor en Node Js que reciba dos numeros, 
+este debe responder la multiplicacion de ambos y la division de ambos.
