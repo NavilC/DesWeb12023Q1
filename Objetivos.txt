@@ -24,3 +24,11 @@ este debe responder la multiplicacion de ambos y la division de ambos.
 
 ejemplo
 http://localhost?num1=7&num2=1&num3=1&num4=hola
+
+
+Objetivos S2 S1 
+
+1) Repaso de MySQL
+2) Conectar NodeJs con MySQL 
+3) Servicio de Selección
+4) Formato JSON
