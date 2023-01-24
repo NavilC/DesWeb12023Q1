@@ -30,5 +30,5 @@ Objetivos S2 S1
 
 1) Repaso de MySQL
 2) Conectar NodeJs con MySQL 
-3) Servicio de Selección
+3) Servicio de GET / Inserción
 4) Formato JSON
