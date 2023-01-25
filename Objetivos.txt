@@ -39,3 +39,7 @@ Objetivos S2 S2
 1) Servicios GET / Seleccion 
 2) Retornar datos en JSON
 
+
+Ejercicio de Clase 
+1) Servicio de Seleccion e Inserción de la tabla Telefonos
+
