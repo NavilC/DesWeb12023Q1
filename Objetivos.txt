@@ -58,9 +58,12 @@ D = DELETE
 
 Ejercicio:
 
-Una biblioteca permite el registro de Libros: id, nombre, genero, fecha_lanzamineto, autor. 
-Tambien puede registrar los alumnos de la universidad: numero_cuenta, nombre, apellido. 
-Los alumnos pueden realizar prestamos de libros (n, n): id_prestamo, id_libro, numero_cuenta, fecha_prestamo.
+Una biblioteca permite el registro de Libros: 
+        id, nombre, genero, fecha_lanzamineto, autor. 
+Tambien puede registrar los alumnos de la universidad: 
+        numero_cuenta, nombre, apellido. 
+Los alumnos pueden realizar prestamos de libros (n, n): 
+        id_prestamo, id_libro, numero_cuenta, fecha_prestamo.
 
 Desarrollar los servicios CRUD para resolver por medio de back end 
 el anterior problema
