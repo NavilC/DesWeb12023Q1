@@ -67,3 +67,12 @@ Los alumnos pueden realizar prestamos de libros (n, n):
 
 Desarrollar los servicios CRUD para resolver por medio de back end 
 el anterior problema
+
+Objetivos S3 S1
+1) Instalar Express 
+2) Conocer la documentación de Express
+3) Metodos de Consumo 
+        a) POST: Se utiliza para la creación de Objetos en un web service. (insert) C
+        b) GET: Se utiliza para la obtener informacion de Objetos en un WS. (select) R
+        c) UPDATE: Se utiliza para actualizar objetos de un WS. (update) U
+        d) DELETE: Se utiliza para eliminar objetos de un WS. (delete) D
