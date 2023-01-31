@@ -24,25 +24,48 @@ app.get('/api/persona/', (req, res)=>{
     con.connect(function(err){
 
         if (err){
-
             res.send(err);
-
         }else{
-
             con.query(sql, function(err, result){
 
                 if (err){
-
                     res.send(err);
                 }else{
                     res.send(result);
                 }
-
             });
-
         }
-
     } );
+
+});
+
+app.get('/api/persona/:id', (req,res)=>{
+
+
+    let con = mysql.createConnection({
+        host: "127.0.0.1",
+        user: "root",
+        password: "passa1234b",
+        database: "deswebq12023"
+    });
+
+    let sql = "select * from tbl_persona where id_persona = ?";
+    let parametros = [req.params.id];
+
+    con.connect(function(err){
+
+        if (err){
+            res.send(err);
+        }else{
+            con.query(sql, parametros, function(err, result){
+                if (err){
+                    res.send(err);
+                }else{
+                    res.send(result);
+                }
+            });
+        }
+    });
 
 });
 
