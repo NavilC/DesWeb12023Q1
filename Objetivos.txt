@@ -74,5 +74,5 @@ Objetivos S3 S1
 3) Metodos de Consumo 
         a) POST: Se utiliza para la creación de Objetos en un web service. (insert) C
         b) GET: Se utiliza para la obtener informacion de Objetos en un WS. (select) R
-        c) UPDATE: Se utiliza para actualizar objetos de un WS. (update) U
+        c) PUT: Se utiliza para actualizar objetos de un WS. (update) U
         d) DELETE: Se utiliza para eliminar objetos de un WS. (delete) D
