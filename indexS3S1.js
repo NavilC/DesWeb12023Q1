@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/api/persona/', (req, res)=>{
+app.get('/api/telefono/', (req, res)=>{
 
 
     /*Lo que yo programe acá sera la logica 
@@ -13,13 +13,13 @@ app.get('/api/persona/', (req, res)=>{
 
 
     let con = mysql.createConnection({
-        host: "127.0.0.1",
-        user: "root",
-        password: "passa1234b",
-        database: "deswebq12023"
+        host: 'localhost',
+        user: 'root',
+        password: '',
+        database: 'registros'
     });
 
-    let sql = "select * from tbl_persona";
+    let sql = "select * from tbl_telefonos";
 
     con.connect(function(err){
 
@@ -39,17 +39,17 @@ app.get('/api/persona/', (req, res)=>{
 
 });
 
-app.get('/api/persona/:id', (req,res)=>{
+app.get('/api/telefonos/:id', (req,res)=>{
 
 
     let con = mysql.createConnection({
-        host: "127.0.0.1",
-        user: "root",
-        password: "passa1234b",
-        database: "deswebq12023"
+        host: 'localhost',
+        user: 'root',
+        password: '',
+        database: 'registros'
     });
 
-    let sql = "select * from tbl_persona where id_persona = ?";
+    let sql = "select * from tbl_telefonos where id_persona = ?";
     let parametros = [req.params.id];
 
     con.connect(function(err){
@@ -69,22 +69,22 @@ app.get('/api/persona/:id', (req,res)=>{
 
 });
 
-app.post('/api/persona/', (req, res)=>{
+app.post('/api/telefono/', (req, res)=>{
 
     let con = mysql.createConnection({
-        host: "127.0.0.1",
-        user: "root",
-        password: "passa1234b",
-        database: "deswebq12023"
+        host: 'localhost',
+        user: 'root',
+        password: '',
+        database: 'registros'
     });
 
-    let sql = "insert into tbl_persona " +
-            " (nombre_persona, apellido_persona, fecha_nacimiento) " +
+    let sql = "insert into tbl_telefonos " +
+            " (id_persona, numero, id_persona) " +
             " values (?, ?, ?)";
     
-    let parametros = [  req.body.nombre_persona, 
-                        req.body.apellido_persona, 
-                        req.body.fecha_nacimiento
+    let parametros = [  req.body.id_persona, 
+                        req.body.numero, 
+                        req.body.id_persona
                     ];
 
     con.connect(function(err){
@@ -107,15 +107,14 @@ app.put('/api/persona/:id', (req, res)=>{
 
 
     let con = mysql.createConnection({
-        host: "127.0.0.1",
-        user: "root",
-        password: "passa1234b",
-        database: "deswebq12023"
+        host: 'localhost',
+        user: 'root',
+        password: '',
+        database: 'registros'
     });
 
-    let sql = " update tbl_persona set nombre_persona = ?, " +
-                " apellido_persona = ?,  "+
-                " fecha_nacimiento = ? "+
+    let sql = " update tbl_telefonos set id_telefono, " +
+                " apellido_perso = ?,  "+
                 " where id_persona = ? ";
 
     let parametros = [  req.body.nombre_persona, 
