@@ -19,6 +19,12 @@
         <h5>Form Edicion</h5>
 
         <form id="datosEnviar">
+
+          <div class="mb-3 mt-3">
+            <label for="id" class="form-label">Id:</label>
+            <input type="number" class="form-control" id="id" placeholder="Ingresar Id" name="id">
+          </div>
+
           <div class="mb-3 mt-3">
             <label for="nombre" class="form-label">Nombre:</label>
             <input type="text" class="form-control" id="nombre" placeholder="Ingresar Nombre" name="nombre">
@@ -32,8 +38,19 @@
             <input type="date" class="form-control" id="fecha" placeholder="Ingresar Fecha" name="fecha">
           </div>
           <button type="button"   
-            onclick="enviarDatos()"
-          class="btn btn-primary">Enviar Datos</button>
+            onclick="insertarDatos()"
+          class="btn btn-primary">Insertar Datos</button>
+
+          <button type="button"   
+            onclick="actualizarDatos()"
+          class="btn btn-warning">Actualizar Datos</button>
+
+          <button type="button"   
+            onclick="borrarDatos()"
+          class="btn btn-danger">Borrar Datos</button>
+
+         
+
         </form>
 
         <table  class="table" id="reportePersona">
